@@ -4,7 +4,6 @@
 
 short int invn (short int n) {
 	int d1 = n/1000, d2 = (n-d1*1000)/100, d3 = (n-d1*1000-d2*100)/10, d4 = n-d1*1000-d2*100-d3*10;
-	//printf("1:%hd,2:%hd,3:%hd,4:%hd\n", d1,d2,d3,d4); debug
 	short int r = d4*1000 + d3*100 + d2*10 + d1;
 	return r;
 }
