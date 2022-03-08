@@ -10,7 +10,7 @@ short int invn (short int n) {
 
 int main () {
 	
-	short int in, cn, rn, iv, kpkc = 6174;
+	short int in, cn, rn, iv, cu;
 	int ct = 0;
 
 	printf("Input Four Digit Number: ");
@@ -25,8 +25,9 @@ int main () {
 
 	rn = in;
 
-	while (rn != kpkc) {
+	while (rn != cu) {	
 		cn = rn;
+		cu = cn;
 		int d1 = cn/1000, d2 = (cn-d1*1000)/100, d3 = (cn-d1*1000-d2*100)/10, d4 = cn-d1*1000-d2*100-d3*10;
 		int drry[4] = {d1, d2, d3, d4};
 		c = sort(drry,4);
